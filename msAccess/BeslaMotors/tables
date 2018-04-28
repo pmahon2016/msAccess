@@ -1,0 +1,120 @@
+  CREATE TABLE SALESPERSON (
+            SalesID int,
+            SalesPersonFName varchar(50),
+            SalesPersonLName varchar(50), 
+            SalesPersonPhone int,
+            SalesPersonEmailAddress varchar(50),
+            SalesSpeciality varchar(50), 
+            Availability varchar(50),
+            SalesPersonMonthlyDraw int,
+            Taxint int,
+            CONSTRAINT SalesID_PK PRIMARY KEY (SalesID)
+            );
+
+
+CREATE TABLE DEALERSHIP (
+        DealershipNum varchar(50) PRIMARY KEY, 
+        Owner varchar(50),   
+        DealerFinancing varchar(50), 
+        LicenseNum int,
+        AutoMake varchar(50), 
+        NumModels varchar(50),
+        DealershipStreet varchar(50),
+        DealershipCity varchar(50),
+        DealershipState varchar(20),
+        DealershipZip int
+        
+        );
+
+CREATE TABLE AUTOINVENTORY (
+        VehicleIDNum varchar(50), 
+        AutoCapacity int, 
+        AutoColor varchar(50), 
+        AutoCylinders int,  
+        AutoListPrice int, 
+        AutoMake varchar(50), 
+        AutoMilageAtDelivery int, 
+        AutoModel varchar(50), 
+        AutoOptions varchar(150),  
+        AutoCost int, 
+        AutoStyle varchar(50), 
+        AutoWeight varchar(50), 
+        AutoYear varchar(50), 
+        DateofDelivery varchar(50), 
+        DateofManufacture varchar(50), 
+        DealershipNum varchar(50), 
+        NumOfDoors int, 
+        OdometerReading int, 
+        PlaceOfManufacture varchar(100),
+        PRIMARY KEY (VehicleIDNum),
+        CONSTRAINT dealership_FK FOREIGN KEY (DealershipNum) REFERENCES DEALERSHIP(DealershipNum)
+    );
+
+
+
+CREATE TABLE CUSTOMER (
+
+        CustID int NOT NULL AUTO_INCREMENT,
+        CustLName varchar(20),
+        CustFName varchar(20), 
+        CustStreet varchar(20), 
+        CustCity varchar(20), 
+        CustZip	 int,
+        CustAnnnualIncome int, 
+        CustomerEmail varchar(20), 
+        CustomerEmployer varchar(20),
+        CustomerFinancing varchar(20),
+        CustGender varchar(20),
+        CustomerInsuranceNum varchar(20),
+        CustomerLeaseBuy varchar(20), 
+        CustomerLicenseNum varchar(20),  
+        CustomerPhone int, 
+        CustomerReferOut varchar(20), 
+        CustomerReturnBuyer varchar(120), 
+        CustomerSocial int, 
+        CustomerTradeIn varchar(20),   
+        HowCustomerFoundDealership varchar(20), 
+        OfferedTestDrive varchar(20), 
+        RentOwnCustomerHome varchar(20), 
+        ExtendedWarranty varchar(20),        
+        PRIMARY KEY (CustID)
+                
+    );
+
+
+CREATE TABLE WARRANTY (
+        VehicleIDNum varchar(50),
+        CustID integer,
+        WarrantyNum varchar(50),
+        BeginDate varchar(10),
+        EndDate varchar(10),
+        Underwriter varchar(20),
+        PRIMARY KEY (VehicleIDNum,CustID, WarrantyNum),
+        CONSTRAINT Cust_FK FOREIGN KEY (CustID) REFERENCES CUSTOMER(CustID),
+        CONSTRAINT VInID_FK FOREIGN KEY (VehicleIDNum) REFERENCES AUTOINVENTORY(VehicleIDNum),
+        CONSTRAINT CustID_FK FOREIGN KEY (CustID) REFERENCES CUSTOMER(CustID)
+        );
+
+
+CREATE TABLE BILLOFSALE (
+        BOSNum int NOT NULL AUTO_INCREMENT,
+        VehicleIDNum varchar(50), 
+        SalesID int, 
+        AutoRegistrationNumber int, 
+        AutoSalePrice int, 
+        CustID integer,
+        CustomerFinancing varchar(50), 
+        DateOfSale varchar(50), 
+        Dealer varchar(50) , 
+        OdometerReading int, 
+        ExtendedWarranty varchar(50),
+        PRIMARY KEY(BOSNum),
+        CONSTRAINT VehicleID_FK FOREIGN KEY (VehicleIDNum) REFERENCES AUTOINVENTORY(VehicleIDNum),
+        CONSTRAINT Sales_FK  FOREIGN KEY (SalesID) REFERENCES SALESPERSON(SalesID),
+        CONSTRAINT Customer_FK FOREIGN KEY (CustID) REFERENCES CUSTOMER(CustID),
+        CONSTRAINT Dealer_FK FOREIGN KEY (Dealer) REFERENCES DEALERSHIP(DealershipNum)
+       
+    );
+
+
+
