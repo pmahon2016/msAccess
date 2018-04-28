@@ -1,23 +1,48 @@
-
+INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
+ AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
+ Values('1HGC382633B504352'  ,6, 'Blue' ,6, 45000, 'Besla', 0004, 'Amp', 'TechPackage', 30000, 'Sedan', '1500', '2018','March 10 2018', 'Jan 12 2018', 4, 006, 'Detroit'); 
+   
  
 INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
- AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture) Values('1JGC382633B504352'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp',
-  'Comfort', 65000, '28000', '1500', '2018','March 10 2018', 'Jan 12 2018', 54, 006, 'Detroit')
+ AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture) Values('1JGC382633B504357'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp',
+  'Comfort', 65000, '28000', '1500', '2018','March 10 2018', 'Jan 12 2018', 54, 006, 'Detroit');
  
 INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
  AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
   Values('1JGC3828833B50435'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp', 'Comfort', 28000, 'Sedan', '1500', '2018','March 10 2018',
-   'Jan 12 2018' , 24, 006, 'Detroit')
+   'Jan 12 2018' , 24, 006, 'Detroit');
     
 
 INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
  AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
 Values('1JGC382633B504344'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp', 'Comfort', 29000, '29000', '1500', '2018','March 10 2018',
- 'Jan 12 2018', 14, 006, 'Detroit')
+ 'Jan 12 2018', 14, 006, 'Detroit');
     
  
 INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
  AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
 Values('1JGC382633B504333'  ,4, 'Pink' ,6, 35000, 'Besla', 0004, 'Amp', 'Economy', 34000, 'Sedan', '1500', '2018','March 10 2018', 'Jan 12 2018',
-0088 ,6, 'Detroit')
+0088 ,6, 'Detroit');
     
+    
+INSERT into SALESPERSON (SalesID, SalesPersonFName,SalesPersonLName, SalesPersonPhone, SalesPersonEmailAddress,  SalesSpeciality, Availability,SalesPersonMonthlyDraw, TaxNumber) 
+
+Values ( 001, 'Charlie', 'Pride',9143489122, 'cpride@besla.com', 'Sports Cars' , 'TWTFSat',2000, 873366344 ); 
+   
+INSERT into SALESPERSON (SalesID, SalesPersonFName,SalesPersonLName, SalesPersonPhone, SalesPersonEmailAddress,  SalesSpeciality, Availability,SalesPersonMonthlyDraw, TaxNumber) 
+
+Values ( 004, 'Miles', 'Tobin',9143489121, 'mtobin@besla.com', 'Family Cars' , 'WTFSatSun',2000, 833366344 ); 
+   
+INSERT into SALESPERSON (SalesID, SalesPersonFName,SalesPersonLName, SalesPersonPhone, SalesPersonEmailAddress,  SalesSpeciality, Availability,SalesPersonMonthlyDraw, TaxNumber) 
+
+Values ( 0088, 'Saul', 'Greenberg',9143489122, 'sgreen@besla.com', 'Sales Manager' , 'WTFSatSun',4000, 8743366344 ); 
+   
+
+INSERT into SALESPERSON (SalesID, SalesPersonFName,SalesPersonLName, SalesPersonPhone, SalesPersonEmailAddress,  SalesSpeciality, Availability,SalesPersonMonthlyDraw, TaxNumber) 
+
+Values ( 009, 'Ron', 'Gibbs',9143487722, 'ronny@besla.com', 'Economy Cars' , 'TWTFSat',2000, 873332344 ); 
+   
+INSERT into SALESPERSON (SalesID, SalesPersonFName,SalesPersonLName, SalesPersonPhone, SalesPersonEmailAddress,  SalesSpeciality, Availability,SalesPersonMonthlyDraw, TaxNumber) 
+
+Values ( 044, 'Linda', 'Mann', 9143482322, 'lmann@besla.com', 'SuV' , 'MWTFSat',2000, 4433625244 ); 
+   
