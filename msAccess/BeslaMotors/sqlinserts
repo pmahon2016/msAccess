@@ -1,0 +1,23 @@
+
+ 
+INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
+ AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture) Values('1JGC382633B504352'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp',
+  'Comfort', 65000, '28000', '1500', '2018','March 10 2018', 'Jan 12 2018', 54, 006, 'Detroit')
+ 
+INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
+ AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
+  Values('1JGC3828833B50435'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp', 'Comfort', 28000, 'Sedan', '1500', '2018','March 10 2018',
+   'Jan 12 2018' , 24, 006, 'Detroit')
+    
+
+INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
+ AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
+Values('1JGC382633B504344'  ,6, 'Red' ,6, 45000, 'Besla', 0004, 'Amp', 'Comfort', 29000, '29000', '1500', '2018','March 10 2018',
+ 'Jan 12 2018', 14, 006, 'Detroit')
+    
+ 
+INSERT into AUTOINVENTORY (VehicleIDNum, AutoCapacity,AutoColor, AutoCylinders, AutoListPrice, AutoMake,AutoMilageAtDelivery,AutoModel, AutoOptions,
+ AutoCost, AutoStyle, AutoWeight, AutoYear, DateofDelivery, DateofManufacture, NumOfDoors, OdometerReading, PlaceOfManufacture)
+Values('1JGC382633B504333'  ,4, 'Pink' ,6, 35000, 'Besla', 0004, 'Amp', 'Economy', 34000, 'Sedan', '1500', '2018','March 10 2018', 'Jan 12 2018',
+0088 ,6, 'Detroit')
+    
